@@ -1,1 +1,57 @@
+# ==========================================
+# 1. Środowisko wirtualne Pythona (Virtual Env)
+# ==========================================
+.venv/
+venv/
+ENV/
+env/
+build/
+dist/
+*.egg-info/
 
+# ==========================================
+# 2. Pamięć podręczna Pythona i IDE
+# ==========================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.vscode/
+.idea/
+
+# ==========================================
+# 3. Zbiory danych (Dane wizyjne i zdjęcia)
+# ==========================================
+# Ignorujemy cały folder z multimediami, bo zdjęcia 
+# maszyn i usterki ważą za dużo i mogą zawierać tajemnice firmy
+data/
+
+# Dodatkowe zabezpieczenie dla plików wideo i obrazów w innych miejscach
+*.mp4
+*.avi
+*.mkv
+*.jpg
+*.jpeg
+*.png
+*.bmp
+
+# ==========================================
+# 4. Modele Machine Learning i AI
+# ==========================================
+# Wagi modeli mogą ważyć od kilkudziesięciu MB do kilku GB
+models/
+*.pt
+*.pth
+*.pkl
+*.onnx
+*.h5
+*.weights
+
+# ==========================================
+# 5. Logi i pliki konfiguracyjne (Sekrety)
+# ==========================================
+# Tutaj będą zapisywać się błędy systemu oraz klucze API do OpenAI/Gemini
+*.log
+.env
+config.private.json
